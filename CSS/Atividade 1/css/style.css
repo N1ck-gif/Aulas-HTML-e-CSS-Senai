@@ -1,0 +1,175 @@
+.body, h1, h2{
+    margin: 0px;
+    padding: 0px;
+}
+.body{
+    background-color: silver;
+}
+.caixa_principal{
+    width: 1000px;
+    height: 1500px;
+    background-color: white;
+    float:left;
+    border: solid 2px;
+}
+.contener{
+    width: 1000px;
+    height: 1500px;
+    background-color: cyan;
+    margin-left: auto;
+    margin-right: auto;
+}
+.coluna_nome{
+    padding-top: 30px;
+    width: 1000px;
+    height: 80px; 
+    background-color: black;
+    float: left;
+}
+.nome{
+    font-family: "Times New Roman";
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+.caixa_conteudo{
+    width: 1000px;
+    height: 1300px;
+    float: left;
+}
+.objetivo{
+    width: 500px;
+    height: 40px;
+    font-family: "Times New Roman";
+    margin-top: 14px;
+    border-bottom: solid 4px black;
+}
+.dados_objetivo{
+    width: 500px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.informacoes{
+    width: 320px;
+    height: 250px;
+}
+.dados{
+    width: 500px;
+    height: 40px;
+    font-family: "Times New Roman";
+    border-bottom: solid 4px black;
+    margin-top: 28px;
+}
+.lista{
+   width: 700px;
+    height: 200px; 
+    margin-bottom: 5px;
+}
+.itens{
+    text-align: left;
+    width: 300px;
+    height:40px;
+    list-style: none;
+    margin-bottom: 1px;
+    font-size: 18px;
+}
+.cursos{
+    width: 500px;
+    height: 40px;
+    border-bottom: solid 4px blue;
+    border-color: black;
+    float:left;
+    margin-top: 40px;
+}
+.dados_curso{
+    width:800px;
+    height:180px;
+    clear: both;
+    float:left;
+    margin-top: 20px;
+}
+.subtopico{
+    width: 600px;
+    height: 20px;
+    margin-left: 30px;
+}
+.itens2{
+    text-align: left;
+    width: 700px;
+    height: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    }
+.idiomas{
+    width: 500px;
+    height: 40px;
+    border-bottom: solid 4px blue;
+    border-color: black;
+    float: left;
+    margin-top: 110px;
+}
+.dados_idioma{
+    width: 800px;
+    height: 50px;
+    clear: both;
+    float: left;
+}
+.escolaridade{
+    width: 500px;
+    height: 40px;
+    border-bottom: solid 4px black;
+    border-color: black;
+    float: left;
+    margin-top: 70px;
+}
+.dados_escola{
+    width: 800px;
+    height: 100px;
+    font-size: 18px;
+    float: left;
+    margin-left: 20px;
+}
+
+.agradecimento{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 870px;
+    clear: both;
+    float: center;
+}
+
+.agradecimento:hover{
+    background-color: cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

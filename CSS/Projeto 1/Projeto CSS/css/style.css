@@ -1,0 +1,104 @@
+
+.container{
+    width: 1500px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+}
+
+/*MENU*/
+#containerMenu{
+    width: 100%;
+    height: 90px;
+    background-color: aquamarine;
+}
+
+#logo{
+    width: 360px;
+    height: 90px;
+    background-image: url(../imagens/LOGO3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-left: 30px;
+}
+
+.menu{
+    width: 900px;
+    height: 90px;
+    background-color: aquamarine;
+    margin-left: 50px;
+    float: left;
+}
+
+.menuItem{
+    width: 170px;
+    height: 90px;
+    float: left;
+}
+
+.menuItem:hover{
+    background-color: blue;
+}
+
+.submenu, .submenu2{
+    width: 170px;
+    min-height: 60px;
+    height: auto;
+    background-color: blueviolet;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 45px;
+}
+
+.submenuItem{
+    float: none;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menuItem:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menuTitulo{
+    font-size: 26px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*header{
+    width: 100%;
+    height: 1200px;
+    background-image: url(../imagens/familia1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    padding-top: 200px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.menu{
+    width: 150px;
+    height: 400px;
+    background-color: darkblue;
+}
+.formatItem{
+    font-family: Verdana;
+    font-size: 16px;
+    color: brown;
+    text-align: center;
+}
+.menu, .submenu{
+    width: 150px;
+    min-height: 50px;
+    height: auto;
+    background-color: darkgoldenrod;
+}
+.menuItem, .submenuItem{
+    width: inherit;
+    height: 35px;
+    padding-top: 15px;
+}
+.menuItem:hover{
+    background-color: blue;
+    cursor: pointer;
+    color: darkmagenta;
+}
+.submenuItem:hover{
+    background-color: darkolivegreen;
+    cursor: pointer;
+}
+.submenu{
+    margin-left: 150px;
+    margin-top: -35px;
+/*    display: none;*/
+    
+/*    torna o elemento transpartente*/
+    opacity: 0;
+/*    Oculta o elemento */
+    visibility: hidden;
+}
+.menuItem:hover > .submenu{
+/*    display: block;*/
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+}
+
+/*Efeito DropDown padrão
+.menuItem:hover > .suvmenu{
+    display:block;
+}
+*/

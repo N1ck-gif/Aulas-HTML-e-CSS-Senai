@@ -1,0 +1,70 @@
+/*Reset*/
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.formatItem{
+    font-family: verdana;
+    font-size: 16px;
+    color: crimson;
+    text-align: center;
+}
+.menu{
+    width: 750px;
+    height: 50px;
+    background-color: darkgrey;
+    margin-left: auto;
+    margin-right: auto;
+/*    arredondamento das bordas*/
+    border-radius: 50px;
+}
+
+.menuItem, .submenuItem{
+    width: 150px;
+    height: 35px;
+    padding-top: 15px;
+    float: left;
+}
+
+.menuItem:hover{
+    background-color: darksalmon;
+}
+
+.submenu{
+    width: 150px;
+    min-height: 60px;
+    height: auto;
+    background-color: darkblue;
+    margin-top: -15px;
+    
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenuItem{
+    float: none;
+}
+
+.menuItem:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

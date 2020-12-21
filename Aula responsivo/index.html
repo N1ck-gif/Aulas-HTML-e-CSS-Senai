@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styleMob.css">
+    <script src="jQuery/js/jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+             
+             // Function para o click do menuMobile
+            $('#iconeMobile').click(function(){
+                $('#menuMobile').fadeIn(1000);
+            });
+
+            //Function para fechar o menu no click don item
+            $('.itemMenu').click(function(){
+                $('#menuMobile').fadeToggle();
+            });
+
+            $('#servicoTexto').click(function(){
+                $('#servicoImagem').fadeToggle();
+            });
+
+        });
+    </script>
+    
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header> 
+        <div class="containerCenter center">
+            <!-- MENU MOBILE -->
+            <nav id="containerMenuMobile">
+                <div id="iconeMobile">
+
+                </div>
+                <div id="menuMobile">
+                    <ul>
+                        <li class="itemMenu">Menu</li>
+                        <li class="itemMenu">Menu</li>
+                        <li class="itemMenu">Menu</li>
+                        <li class="itemMenu">Menu</li>
+                    </ul>
+                </div>
+            </nav>
+            <figure id="logo">
+
+            </figure>
+            <!-- MENU DESKTOP -->
+            <nav id="containerMenu">
+                <ul id="menu">
+                    <li>Menu 1</li>
+                    <li>Menu 1</li>
+                    <li>Menu 1</li>
+                    <li>Menu 1</li>
+                    <li>Menu 1</li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <!-- CONTEÚDO -->
+    <div id="content" class="heightAuto center">
+        <section id="empresa" class="heightAuto center">
+            <h1>Empresa</h1>
+            <div class="conteudoEmpresa">
+
+            </div>
+            <div class="conteudoEmpresa">
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus velit nam, cum mollitia hic alias perferendis voluptatum veritatis soluta! Cupiditate mollitia itaque hic porro nisi excepturi repellendus adipisci ? 
+                </p>
+            </div>
+            <div class="conteudoEmpresa">
+                
+            </div>
+            <div class="conteudoEmpresa">
+                <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus velit nam, cum mollitia hic alias perferendis voluptatum veritatis soluta! Cupiditate mollitia itaque hic porro nisi excepturi repellendus adipisci ? 
+                </p>
+            </div>
+        </section>
+        
+        <section id="servicos" class="heightAuto center">
+            <h1> Serviços </h1>
+            <div id="servicoTexto" class="heightAuto">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, tenetur, quae saepe, dignissimos est eos non inventore eveniet architecto nostrum id? Eius consectetur iste itaque reiciendis quisquam modi impedit! Laudantium?
+            </div>
+            <div id="servicoImagem">
+
+            </div>
+        </section>
+
+        <section id="localizacao" class="heightAuto center">
+            <h1>Localização da Empresa</h1>
+            <div id="localizacaoTextoLeft" class="heightAuto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo soluta ea molestiae labore quaerat maxime ab consequuntur debitis. Illum sequi eaque similique magni et est vitae deserunt fugiat aperiam!
+            </div>
+            <div id="localizacaoImg">
+                
+            </div>
+            <div id="localizacaoTextoRight" class="heightAuto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sequi esse tenetur officiis ut omnis a perspiciatis ipsum reprehenderit velit! Placeat a vel delectus quod. Aliquid iste sapiente esse voluptate.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sequi esse tenetur officiis ut omnis a perspiciatis ipsum reprehenderit velit! Placeat a vel delectus quod. Aliquid iste sapiente esse voluptate.
+            </div>
+        </section>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+    </footer>
+</body>
+</html>

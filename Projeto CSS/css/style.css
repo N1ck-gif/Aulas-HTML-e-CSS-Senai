@@ -1,0 +1,690 @@
+
+.containerPrincipal{
+    width: 1400px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+/*    background-color: aquamarine;*/
+}
+
+/* CLASSES DE PADRONIZAÇÃO */
+h1{
+   font-family: "Arial Rounded MT Bold";
+    font-size: 50px;
+    font-weight: bold; 
+    padding-top: 10px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.menuTitulo{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 35px;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+p{
+    font-size: 30px;
+    padding-top: 60px;
+    margin-left: 5px;
+}
+
+.titulosDoSite{
+    width: 1100;
+    height: 80px;
+    background-color: #cce1e6;
+    border-radius: 0px 25px 25px 0px;
+}
+
+/*MENU*/
+#containerMenu{
+    width: 100%;
+    height: 95px;
+    background-color: #cce2e6;
+    position: fixed;
+}
+
+#containerMenu a{
+    color: black;
+    text-decoration: none;
+}
+
+#containerMenu a:hover{
+    color: white;
+}
+
+#logo{
+    width: 400px;
+    height: 92px;
+    background-image: url(../imagens/LOGO3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-left: 10px;
+}
+
+.menu{
+    width: 980px;
+    height: 60px;
+    background-color: #cce2e6;
+    float: left;
+}
+
+.menuItem{
+    width: 190px;
+    height: 95px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+
+.menuItem:hover{
+    background-color: #5c7c82;
+    color: white;
+}
+
+.submenu{
+    width: 190px;
+    min-height: 90px;
+    height: auto;
+    background-color: #5c7c82;
+    visibility: hidden;
+    margin-top: 45px;
+}
+
+.submenuItem{
+    width: 190px;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background-color: #7baeb8;
+    cursor: pointer;
+}
+
+.menuItem:hover > .submenu{
+    visibility: visible;
+}
+
+.submenuItem:hover{
+    background-color: #5c7c82;
+}
+
+/* SEÇÃO DO CABEÇALHO */
+
+.mySlides, #slider1, #slider2{
+    width: 100%;
+    height: 870px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    background-size: cover;
+    padding-top: 200px;
+    background-attachment: fixed;
+}
+
+.botao2{
+    width: 100px;
+    height: 100px;
+    margin-left: 1610px;
+/*    margin-top: 215px;*/
+    background-color: #d4ffdf;
+}
+
+.botao1{
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 45px;
+    background-color: #d4ffdf;
+}
+
+#slider1{
+    background-image: url(../imagens/familia4.jpg);
+}
+
+#slider2{
+    background-image: url(../imagens/cabecalho2.jpg);
+}
+
+#slider3{
+    background-image: url(../imagens/cabecalho3.jpg);
+}
+
+#slogan, #slogan2, #slogan3{
+    width: 800px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    font-family: "Berlin Sans FB Demi";
+    font-size: 85px;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    margin-top: -40px;
+}
+
+/* SEÇÃO TOP DESTINOS */
+#containerTopDestinos{
+    width: 100%;
+    height: 650px;
+    background-image: url(../imagens/fundo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.containerTopConteudo{
+    width: 1400px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.topConteudo{
+    width: 400px;
+    height: 570px;
+    background-color: beige;
+    float: left;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 50px;
+    border-radius: 50px 50px 0px 50px;
+}
+
+.topDestinosImagem img{
+    width: 400px;
+    height: 380px;
+    border-radius: 40px 40px 0px 40px;
+}
+
+/* SEÇÃO DESTINOS */
+
+#containerDestinos{
+    width: 100%;
+    height: 1200px;
+    background-color: bisque;
+}
+
+.containerDestinoConteudo{
+    width: 1600px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../imagens/fundo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.destinoConteudo{
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    float: left;
+    margin-left: 90px;
+    margin-right: 20px;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+.destinosImagem img{
+    width: 400px;
+    height: 365px;
+    border-radius: 30px;
+}
+
+/* SEÇÃO HOTÉIS */
+
+#containerHotel5Estrela, #containerHotel3Estrelas{
+    width: 100%;
+    height: 555px;
+    background-color: crimson;
+}
+
+.containerHotel5Conteudo, .containerHoteis3Conteudo{
+    width: 2100px;
+    height: 555px;
+    background-color:#b0ceff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hoteisEstrela{ 
+    width: 560px;
+    height: inherit;
+    float: left;
+}
+
+.tituloHoteis{
+    font-size: 50px;
+/*    padding-top: 200px;*/
+    padding-left: 100px;
+}
+
+.estrelas{
+    padding-top: 180px;
+    padding-left: 168px;
+    color: yellow;
+}
+
+
+.containerHoteisEstrela{
+    width: 1302px;
+    height: inherit;
+    background-color: #b0ceff;
+    float: left;
+}
+
+.hotelConteudo{
+    width: 365px;
+    height: 515px;
+    background-color: white;
+    float: left;
+    margin-left: 30px;
+    margin-top: 25px;
+    border-radius: 40px;
+}
+
+.imagemNovaYorque, .imagemDubai, .imagemParis, .imagemRio, .imagemHavai, .imagemCalifornia{
+    width: 365px;
+    height: 290px;
+    background-image: url(../imagens/hotel1.jpg);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.imagemDubai{
+    background-image: url(../imagens/hotel3.jpg);
+}
+.imagemDubai h1{
+    font-size: 35px;
+    color: white;
+}
+
+.imagemParis{
+    background-image: url(../imagens/hotel2.jpg);
+}
+
+.imagemParis h1{
+    font-size: 35px;
+    color: white;
+}
+
+.imagemNovaYorque h1{
+    font-size: 35px;
+    color: white;
+}
+
+.imagemRio{
+    background-image: url(../imagens/hotel4.jpg);
+}
+
+.imagemRio h1{
+    font-size: 35px;
+    color: white;
+}
+
+.imagemHavai{
+    background-image: url(../imagens/hotel5.jpg);
+}
+
+.imagemHavai h1{
+    font-size: 35px;
+    color: white;
+}
+
+.imagemCalifornia{
+    background-image: url(../imagens/hotel6.jpg);
+}
+
+.imagemCalifornia h1{
+    font-size: 35px;
+    color: white;
+}
+
+/* LUGARES INDICADOS PARA PASSAR O FINAL DO ANO */
+
+#containerFinaldoAno{
+    width: 100%;
+    height: 700px;
+    background-image: url(../imagens/fundoFinaldeAno2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.containerFinaldeAnoConteudo{
+    width: 1400px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.novaYork, .londres, .paris{
+    width: 365px;
+    height: 560px;
+    background-image: url(../imagens/fimAno4.jpg);
+    float: left;
+    background-size: cover;
+    margin-right: 20px;
+    margin-left: 65px;
+    margin-top: 70px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    visibility: hidden;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.londres{
+    background-image: url(../imagens/fimAno2.png);
+}
+
+.paris{
+    background-image: url(../imagens/fimAno3.jpg);
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tituloLugares{
+    font-family: "arial";
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.9);
+    padding-top: 70px;
+}
+
+.novaYorkAumentada, .londresAumentada, .parisAumentada{
+    width: 350px;
+    height: 590px;    
+    background-image: url(../imagens/fimAno-4.jpg);
+    background-size: cover;
+    visibility: visible;
+    border-radius: 40px;
+}
+
+.londresAumentada{
+    background-image: url(../imagens/fimAno-2.png);
+}
+
+.parisAumentada{
+    background-image: url(../imagens/fimAno-3.jpg);
+}
+
+.novaYork:hover{
+    visibility: visible;
+    transform: scale(1.2); 
+}
+
+.londres:hover{
+    visibility: visible;
+    transform: scale(1.2); 
+}
+
+.paris:hover{
+    visibility: visible;
+    transform: scale(1.2); 
+}
+
+.novaYork:hover .novaYorkAumentada{
+    visibility: hidden;
+}
+
+.londres:hover .londresAumentada{
+    visibility: hidden;
+}
+
+.paris:hover .parisAumentada{
+    visibility: hidden;
+}
+
+/* PONTOS TURÍSTICOS */
+
+#containerPontosTuristicos{
+    width: 100%;
+    height: 1440px;
+    background-color: aqua;
+}
+
+.containerPontosTuristicosConteudo{
+    width: 1908px;
+    height: 480px;
+    background-color: crimson;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerRio, .containerParis, .containerCalifornia, .containerNovaYorque, .containerHavai, .containerDubai{
+    width: 50%;
+    height: inherit;
+    background-color: blue;
+    float: left;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.containerRio{
+    background-image: url(../imagens/rio-de-janeiro-809756_1920.jpg);
+}
+
+.containerParis{
+    background-image: url(../imagens/paris-1836415_1920.jpg);
+}
+
+.containerCalifornia{
+    background-image: url(../imagens/golden-gate-bridge-1081782_1920.jpg)
+}
+
+.containerNovaYorque{
+    background-image: url(../imagens/new-york-1587558_1920.jpg);
+}
+
+.containerHavai{
+    background-image: url(../imagens/hawaii-90931_1920.jpg);
+}
+
+.containerDubai{
+    background-image: url(../imagens/dubai-1514540_1920.jpg);
+}
+
+.tituloTuristico{
+    width: 30%;
+    height: 140px;
+/*    background-color: chartreuse;    */
+    padding-top: 190px;
+    font-family: "Arial Rounded MT Bold";
+    font-size: 50px;
+    font-weight: bold; 
+    color: white;   
+    margin-left: 15px;
+    float: left;
+}
+
+.conteudoTuristico{
+    width: 68%;
+    height: 480px;
+/*    background-color: aqua;*/
+    float: left;
+}
+
+.colunasConteudo{
+    width: 280px;
+    height: 450px;
+    background-color: white;
+    margin-top: 12px;
+    margin-left: 40px;
+    float: left;
+    border-radius: 20px;
+}
+
+.imagemColuna{
+    width:inherit;
+    height:78%;
+}
+
+.textoConteudo{
+    width: inherit;
+    height: 22%;
+}
+
+.cristo img{
+    width: 280px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.formatTituloColuna{
+    font-size: 21px;
+    padding-top: 0px;
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.formatTextoColuna{
+    font-size: 21px;
+    padding-top: 0px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* SEÇÃO SOBRE A EMPRESA */
+
+#containerEmpresa{
+    width: 100%;
+    height: 300px;
+    background-image: url(../imagens/wallpaper4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.containerEmpresaConteudo{
+    width: 1300px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.conteudoColuna{
+    width: 350px;
+    height: 220px;
+    background-color: #333333;
+    color: white;
+    float: left;
+    margin-left: 60px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 28px;
+    list-style: circle;
+    cursor: pointer;
+}
+
+.conteudoColuna:hover{
+    border: 8px solid #b5acac;
+    border-bottom: 8px solid #706b6b;
+    border-right: 8px solid #706b6b; 
+}
+
+/* SEÇÃO HISTÓRIA */
+
+#containerHistoria{
+    width: 100%;
+    height: 430px;
+    background-image: url(../imagens/wallpaper3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.containerHistoriaConteudo{
+    width: 1300px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px;
+    color: black;
+}
+
+/* SEÇÃO DO RODAPÉ */
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: white; 
+}
+
+.fontTitulo{
+    margin-top:0px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "arial";
+    padding: 20px;
+    text-align: center;
+}
+
+.fontTexto{
+    font-size: 15px;
+    font-family: "arial";
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#containerRodape{
+    width: inherit;
+    height: inherit;
+    background-color: white;
+}
+
+.conteudoRodape{
+    width: 500px;
+    height: 170px;
+    background-color: beige;
+    float: left;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.imagemFormasDePagamento, .imagemRedesSociais{
+    width: inherit;
+    height: 100px;
+}
+
+.imagemFormasDePagamento img, .imagemRedesSociais img{
+    width: inherit;
+    height: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

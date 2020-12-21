@@ -1,0 +1,44 @@
+/*Antes de começar o código, fazer essa estrutura*/
+body, ul, li{
+    margin: 0px;
+    padding: 0px;
+}
+.Lista{
+    width: 500px;
+    height: 50px;
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.itens{
+    width: 100px;
+    height: 36px;
+    padding-top: 15px;
+    text-align: center;
+    float: left;
+    list-style: none;
+    font-family: verdana;
+}
+.itens:hover, .submenuItem:hover{
+    background-color: blueviolet;
+    color: blue;
+}
+.submenu{
+    width: 150px;
+    min-height: 50px;
+    height: auto;
+    margin-top: 15px;
+    display: none;
+}
+.submenuItem{
+    width: inherit;
+    height: 35px;
+    padding-top: 15px;
+    background-color: aquamarine;
+    list-style: none;
+}
+.itens:hover > .submenu{
+    display: block;
+    background-color: crimson;
+}

@@ -1,0 +1,73 @@
+h1 {
+    font-family: "comic sans ms";
+    color:black;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px #ff0000;
+} 
+
+h2 {
+    font-family: "Arial";
+    text-align: center;
+    text-emphasis-position:;
+    color:white;
+}
+#tabela{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;   
+    height: 50px;
+    border: solid 1px;
+}
+
+.Linha{
+    height: 20px;
+} 
+
+.Coluna{
+    width: 200px;
+    border: solid 1px;
+    background-color: darkred;
+}
+.Coluna:hover{
+    background-color: cadetblue;
+}
+
+.texto {
+    font-size: 20px;
+    text-align: justify;
+}
+
+p::first-letter{
+    font-size: 30px;
+}
+
+.itens{
+    text-align: center;
+    background-color: black;
+    width: 85px;
+    height: 36px;
+    color: white;
+}
+
+#exemplo{   
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 12px;
+}
+.edit_word{
+    text-decoration: line-through;
+    font-size: 20px;
+    color: green;
+}
+.strong{
+    color:deeppink;
+    text-decoration: underline;
+}
+.Nick{
+    font-family: "arial black";
+    font size: 70px;
+    text-shadow: 5px 5px blue;
+    text-decoration: line-through;
+}

@@ -1,0 +1,14 @@
+.quadrado{
+    width: 250px;
+    height: 250px;
+    background-color: blanchedalmond;
+    margin-left: auto;
+    margin-right: auto;
+}
+.quadrado2{
+    width: 500px;
+    height: 500px;
+}
+.quadrado:hover{
+    background-color: aqua;
+}

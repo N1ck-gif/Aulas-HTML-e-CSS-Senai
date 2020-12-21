@@ -1,0 +1,598 @@
+<!-- https://wireframe.cc/jDnbaA -->
+
+<html>
+    <head>
+        <title> Projeto CSS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/ancora.js"></script>
+        <script src="js/slider.js"></script>
+    </head>
+    <body>
+        
+<!--    SEÇÃO DO MENU -->
+        <div id="containerMenu">
+            <div class="containerPrincipal">
+                <!-- LOGO -->
+                <a href="#slider1">
+                    <div id="logo"> 
+                    
+                    </div>
+                </a>
+                <!-- MENU -->
+                <nav>
+                <div class="menu">
+                    <div class="menuItem">
+                        <h1 class="menuTitulo">DESTINOS ▼</h1>
+                        <div class="submenu">
+                            <div class="submenuItem">
+                                <a href="#containerTopDestinos">TOP Destinos</a>
+                            </div>
+                            <div class="submenuItem">
+                                <a href="#containerDestinos">Destinos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuItem">
+                        <h1 class="menuTitulo">HOTÉIS ▼</h1>
+                        <div class="submenu">
+                            <div class="submenuItem">
+                                <a href="#containerHotel5Estrela">Hotéis 5 Estrelas</a>
+                            </div>
+                            <div class="submenuItem">
+                                <a href="#containerHotel3Estrelas">Hotéis 3 Estrelas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuItem">
+                        <h1 class="menuTitulo"><a href="#containerFinaldoAno">LUGARES PARA PASSAR O FINAL DO ANO</a></h1>
+                        
+                    </div>
+                    <div class="menuItem">
+                        <h1 class="menuTitulo"><a href="#containerPontosTuristicos">PONTOS TURÍSTICOS</a></h1>
+                        
+                    </div>
+                    <div class="menuItem">
+                        <h1 class="menuTitulo">SOBRE ▼</h1>
+                        <div class="submenu">
+                            <div class="submenuItem">
+                                <a href="#containerEmpresa">Sobre a Empresa</a>
+                            </div>
+                            <div class="submenuItem">
+                                <a href="#containerHistoria">História</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+        
+<!--       SEÇÃO DO CABEÇALHO -->
+        <header>
+            
+            <div id="slider1" class="mySlides">
+                <div id="slogan">
+                Viaje você e sua família na NICKTRAVEL
+                </div>
+                <button class="botao1" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="botao2" onclick="plusDivs(+1)">&#10095;</button>
+                
+            </div>
+            
+            <div id="slider2" class="mySlides">
+                <div id="slogan2">
+                Viva novas EXPERIÊNCIAS
+                </div>
+                <button class="botao1" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="botao2" onclick="plusDivs(+1)">&#10095;</button>
+                
+            </div>
+            
+            <div id="slider3" class="mySlides">
+                <div id="slogan3">
+                Conheça os  Melhores Lugares para Passar o Final do Ano
+                </div>
+                <button class="botao1" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="botao2" onclick="plusDivs(+1)">&#10095;</button>
+                
+            </div>
+            
+            <!-- JAVA SCRIPT DO SLIDER -->
+            <script>
+            var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+        }
+            </script>
+            
+        </header>
+        
+        <!-- SEÇÃO TOP DESTINOS -->
+        <div class="titulosDoSite">
+        <h1> TOP Destinos </h1>
+        </div>
+        <div id="containerTopDestinos">            
+            <section class="containerTopConteudo">
+                <div class="topConteudo">
+                    <figure class="topDestinosImagem">
+                        <img src="imagens/rio1.jpg" alt="rio" title="Rio de Janeiro">
+                    </figure>
+                    <h2> Rio de janeiro </h2>
+                    <p> Passagens a partir de:</p>
+                    <h2> R$ 107</h2>
+                </div>
+                <div class="topConteudo">
+                    <figure class="topDestinosImagem">
+                        <img src="imagens/dubai1.jpg" alt="dubai" title="Dubai">
+                    </figure>
+                    <h2> Dubai </h2>
+                    <p> Passagens a partir de: </p>
+                    <h2> R$ 3.425</h2>
+                </div>
+                <div class="topConteudo">
+                    <figure class="topDestinosImagem">
+                        <img src="imagens/paris1.jpg" alt="paris" title="Paris">
+                    </figure>
+                    <h2> Paris </h2>
+                    <p>Passagens a partir de:</p>
+                    <h2> R$ 1.817 </h2>
+                </div>
+            </section>
+        </div>
+        
+        <!-- SEÇÃO DOS DESTINOS -->
+        <div class="titulosDoSite">
+        <h1> DESTINOS </h1>
+        </div>
+        <div id="containerDestinos">
+            <section class="containerDestinoConteudo">
+                <div class="destinoConteudo">
+                <figure class="destinosImagem">
+                    <img src="imagens/york1.jpg" alt="york" title="Nova York">
+                </figure>
+                    <h2> Nova York </h2>
+                    <p>Passagens a partir de:</p>
+                    <h2> R$ 2.485</h2>
+                </div>
+                <div class="destinoConteudo">
+                <figure class="destinosImagem">
+                    <img src="imagens/california.jpg" alt="california" title="California">
+                </figure>
+                    <h2> Califórnia </h2>
+                    <p> Passagens a partir de: </p>
+                    <h2> R$ 2.799</h2>
+                </div>
+                <div class="destinoConteudo">
+                <figure class="destinosImagem">
+                    <img src="imagens/dubai1.jpg" alt="dubai" title="Dubai">
+                </figure>
+                    <h2> Dubai </h2>
+                    <p> Passagens a partir de: </p>
+                    <h2> R$ 3.425</h2>
+                </div>
+                <div class="destinoConteudo">
+                <figure class="destinosImagem">
+                    <img src="imagens/paris1.jpg" alt="paris" title="Paris">
+                </figure>
+                    <h2> Paris </h2>
+                    <p>Passagens a partir de:</p>
+                    <h2> R$ 1.817 </h2>
+                </div>
+                <div class="destinoConteudo">
+                <figure class="destinosImagem">
+                    <img src="imagens/havai1.jpeg" alt="havai" title="Havaí">
+                </figure>
+                    <h2> Havaí </h2>
+                    <p> Passagens a partir de: </p>
+                    <h2> R$ 9.342 </h2>
+                </div>
+                <div class="destinoConteudo">
+                <figure class="destinosImagem">
+                    <img src="imagens/rio1.jpg" alt="rio" title="Rio de Janeiro">
+                </figure>
+                    <h2> Rio de janeiro </h2>
+                    <p> Passagens a partir de:</p>
+                    <h2> R$ 107</h2>
+                </div>
+            </section>
+        </div>
+        
+        <!-- SEÇÃO DOS HOTEIS 5 ESTRELAS-->
+        <div class="titulosDoSite">
+            <h1>HOTÉIS</h1>
+        </div>
+        <div id="containerHotel5Estrela">
+            <section class="containerHotel5Conteudo">
+                    <div id="hoteisEstrela">
+                        <h1 class="estrelas">★★★★★</h1>
+                        <h1 class="tituloHoteis"> Hotéis 5 Estrelas </h1>
+                    </div>
+                    <div class="containerHoteisEstrela">
+                        <div class="hotelConteudo">
+                            <div class="imagemNovaYorque">
+                                <h1>Nova York</h1>
+                            </div>
+                            <h2>Four Seasons Hotel George V Paris</h2>
+                            <p>Diária:</p>
+                            <h2>R$ 5.070</h2>
+                        </div>
+                        <div class="hotelConteudo">
+                            
+                            <div class="imagemParis">
+                                <h1>Paris</h1>
+                            </div>
+                            <h2>Four Seasons Hotel George V Paris</h2>
+                            <p>Diária:</p>
+                            <h2>R$ 5.070</h2>
+                        </div>
+                        <div class="hotelConteudo">
+
+                            <div class="imagemDubai">
+                                <h1> Dubai </h1>
+                            </div>
+                            <h2> Four Seasons Resort Dubai at Jumeirah Beach</h2>
+                            <p>Diária:</p>
+                            <h2>R$ 6.280</h2>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        <!-- SEÇÃO DOS HOTÉIS 3 ESTRELAS -->
+        <div id="containerHotel3Estrelas">
+            <section class="containerHoteis3Conteudo">
+                <div class="containerHoteisEstrela">
+                        <div class="hotelConteudo">
+                            <div class="imagemRio">
+                                <h1>Rio de Janeiro</h1>
+                            </div>
+                            <h2>Atlantis Copacabana Hotel</h2>
+                            <p>Diária:</p>
+                            <h2>R$ 248</h2>
+                        </div>
+                        <div class="hotelConteudo">
+                            
+                            <div class="imagemHavai">
+                                <h1>Havaí</h1>
+                            </div>
+                            <h2>OHANA Waikiki East by Outrigger</h2>
+                            <p>Diária:</p>
+                            <h2>R$ 625</h2>
+                        </div>
+                        <div class="hotelConteudo">
+
+                            <div class="imagemCalifornia">
+                                <h1>Califórnia</h1>
+                            </div>
+                            <h2> Pacific Edge Hotel on Laguna Beach </h2>
+                            <p>Diária:</p>
+                            <h2>R$ 425</h2>
+                        </div>
+                    </div>
+                <div id="hoteisEstrela">
+                    <h1 class="estrelas">★★★</h1>
+                    <h1 class="tituloHoteis"> Hotéis 3 Estrelas </h1> 
+                </div>
+            </section>
+        </div>
+        
+        <!-- LUGARES INDICADOS PARA PASSAR O FINAL DO ANO -->
+        <div class="titulosDoSite">
+        <h1>LUGARES PARA PASSAR O FINAL DO ANO</h1>
+        </div>
+        <div id="containerFinaldoAno">
+            <section class="containerFinaldeAnoConteudo">
+                <div class="novaYork" class="center">=
+                   
+                    <div class="novaYorkAumentada" class="center">
+                        <h1 class="tituloLugares">Nova York</h1>
+                    </div>
+                    
+                </div> 
+                <div class="londres" class="center">
+                    <div class="londresAumentada" class="center">
+                        <h1 class="tituloLugares">Londres</h1>
+                    </div>
+                </div>
+                <div class="paris" class="center">
+                    <div class="parisAumentada" class="center">
+                        <h1 class="tituloLugares">Paris</h1>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- PONTOS TURISTICOS -->
+        <div class="titulosDoSite">
+            <h1>PONTOS TURÍSTICOS</h1>
+        </div>
+        <div id="containerPontosTuristicos">
+            <section class="containerPontosTuristicosConteudo">
+                <div class="containerRio">
+                    <div class="tituloTuristico">
+                        RIO DE JANEIRO
+                    </div>
+                    <div class="conteudoTuristico">
+                        
+                        <!-- PONTO TURISTICO 1 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/Cristo.jpg" alt="cristo" title="Cristo Redentor">
+                                    
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> CRISTO REDENTOR
+                                </h1>
+                                <p class="formatTextoColuna">Cristo Redentor é uma estátua art déco que retrata Jesus Cristo.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- PONTO TURISTICO 2-->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/pao.jpg" alt="pao" title="Pão de Açucar">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> PÃO DE AÇUCAR
+                                </h1>
+                                <p class="formatTextoColuna">Conjunto formado por dois mirantes naturais na entrada da Baía de Guanabara. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="containerParis">
+                    <div class="tituloTuristico"> PARIS 
+                    </div>
+                    <div class="conteudoTuristico">
+                        
+                        <!-- PONTO TURISTICO 1 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/museuParis.jpg" alt="museu" title="Museu do Louvre">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> MUSEU DO LOUVRE
+                                </h1>
+                                <p class="formatTextoColuna">O Museu do Louvre, é o maior museu de arte do mundo e um monumento histórico em Paris, França.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- PONTO TURISTICO 2 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/arcoParis.jpg" alt="Arco" title="Arco do Triunfo">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> ARCO DO TRIUNFO
+                                </h1>
+                                <p class="formatTextoColuna">O Arco do Triunfo é um monumento localizado na cidade de Paris.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerCalifornia">
+                    <div class="tituloTuristico"> CALIFÓRNIA 
+                    </div>
+                    <div class="conteudoTuristico">
+                        
+                        <!-- PONTO TURISTICO 1 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/ponte.jpg" alt="ponte" title="Ponte Golden Gate">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> PONTE GOLDEN GATE
+                                </h1>
+                                <p class="formatTextoColuna">A Golden Gate Bridge é uma ponte localizada no estado da Califórnia.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- PONTO TURISTICO 2 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/parque.jpg" alt="parque" title="Parque Nacional de Yosemite">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> PARQUE NACIONAL DE YOSEMITE
+                                </h1>
+                                <p class="formatTextoColuna">O Parque de Yosemite localizado nas montanhas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerNovaYorque">
+                    <div class="tituloTuristico"> NOVA YORK 
+                    </div>
+                    <div class="conteudoTuristico">
+                        
+                        <!-- PONTO TURISTICO 1 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/times.jpg" alt="times" title="Times Square">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> TIMES SQUARE
+                                </h1>
+                                <p class="formatTextoColuna">Times Square é um cruzamento de duas grandes avenidas da cidade de Nova Iorque</p>
+                            </div>
+                        </div>
+                        
+                        <!-- PONTO TURISTICO 2 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/central.jpg" alt="central" title="Central Park">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> CENTRAL PARK
+                                </h1>
+                                <p class="formatTextoColuna">O Central Park é um grande parque dentro da cidade de Nova Iorque..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerHavai">
+                    <div class="tituloTuristico"> HAVAÍ 
+                    </div>
+                    <div class="conteudoTuristico">
+                        
+                        <!-- PONTO TURISTICO 1 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/parque2.jpg" alt="parque" title="Cristo Redentor">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> PARQUE NACIONAL DOS VULCÕES DO HAVAÍ
+                                </h1>
+                                <p  class="formatTextoColuna">O Parque , tem os dois dos vulcões mais ativos do mundo.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- PONTO TURISTICO 1 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/BAIA.jpg" alt="baia" title="Baía de Hanauma">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> BAÍA DE HANAUMA
+                                </h1>
+                                <p  class="formatTextoColuna">Hanauma é uma enseada marinha formada dentro de um anel de tufo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerDubai">
+                    <div class="tituloTuristico"> DUBAI 
+                    </div>
+                    <div class="conteudoTuristico">
+                        
+                        <!-- PONTO TURISTICO 1 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/burj.jpg" alt="cristo" title="Cristo Redentor">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> BURJ  KHALIFA
+                                </h1>
+                                <p  class="formatTextoColuna">Burj Khalifa Bin Zayid é a maior estrutura e o maior arranha-céu já construído</p>
+                            </div>
+                        </div>
+                        
+                        <!-- PONTO TURISTICO 2 -->
+                        <div class="colunasConteudo">
+                            <div class="imagemColuna">
+                                <figure class="cristo">
+                                    <img src="imagens/mall.jpg" alt="mall" title="Dubai Mall">
+                                </figure>
+                            </div>
+                            <div class="textoConteudo">
+                                <h1 class="formatTituloColuna"> DUBAI MALL
+                                </h1>
+                                <p  class="formatTextoColuna">O Dubai Mall é o segundo maior centro comercial do mundo em área total</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- SOBRE A EMPRESA-->
+        <div class="titulosDoSite">
+        <h1> SOBRE A EMPRESA </h1>
+        </div>
+        <div id="containerEmpresa">
+            <section class="containerEmpresaConteudo">
+                <div class="empresaConteudo">
+                    <div class="conteudoColuna" class="center">
+                        <h1> Visão: </h1>
+                        
+                            Proporcionar as melhores viagens e as melhores experiências para você e sua família.
+                    </div>
+                    <div class="conteudoColuna" class="center">
+                        <h1> Missão: </h1>
+                        Oferecer uma viagem de qualidade ao cliente, com o objetivo de lhe proporcionar expriências únicas.
+                    </div>
+                    <div class="conteudoColuna">
+                        <h1> Valores: </h1>
+                            <ul>
+                                <li> Agir de forma correta; </li>
+                                <li>A vida em primeiro lugar;</li>
+                                <li>Fazer acontecer.</li>
+                            </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+        <div class="titulosDoSite">
+        <h1>HISTÓRIA</h1>
+        </div>
+        <div id="containerHistoria">
+            <section class="containerHistoriaConteudo">
+                <h1>NICKTRAVEL</h1>
+                <p>Nós da NICKTRAVEL somos uma agência de viagens on-line de origem brasileira. A inovação e pioneiros são nossa marca registrada. Com nossa grande experiência no mercado online, temos nos consolidado cada dia mais como uma das maiores agências de turismo online do Brasil. Nossa viagem começou em 2006 quando entramos à bordo do Submarino para desbravar os 7 mares e trazer as melhores ofertas de viagens. Desde então não paramos de crescer cada dia mais! Em 2011 entramos no mercado de viagens argentino com o Submarino Viajes. Neste ano também criamos a Revista Submarino Viagens, com muito mais conteúdo e dicas para nossos viajantes. O ano de 2013 nos trouxe muitas conquistas, como o tricampeonato do prêmio ReclameAQUI da revista Época o nos tornamos bicampeões como a Melhor Agência de Viagens Online do Brasil. Em 2015 nosso site mudou completamente tornando muito mais simples e fácil de navegar pelas ofertas de viagens.</p>
+            </section>
+        </div>
+        
+        <!-- RODAPÉ -->
+        <footer>
+            <div id="containerRodape">
+                <div class="conteudoRodape">
+                    <p class="fontTitulo"> Formas de pagamento: </p>    
+                    <figure class="imagemFormasDePagamento">
+                        <img src="imagens/FormasDePagamento2.png">
+                    </figure>
+                </div>
+                <div class="conteudoRodape">
+                    <p class="fontTitulo"> Contatos: </p>
+                    <p class="fontTexto"> Telefone: 4002-8922 </p>
+                    <p class="fontTexto"> Celular: (11) 92378-0289 </p>
+                </div>
+                <div class="conteudoRodape">
+                    <p class="fontTitulo"> Redes Sociais: </p>
+                    <figure class="imagemRedesSociais">
+                        <img src="imagens/redesSociais.png">
+                    </figure>
+                </div>
+            </div>    
+        </footer>
+    </body>
+</html>

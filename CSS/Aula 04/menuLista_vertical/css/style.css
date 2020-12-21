@@ -1,0 +1,73 @@
+/*RESET CSS*/
+
+body, ul, li{
+    margin: 0px;
+    padding: 0px;
+}
+
+.formatItens{
+    color:aqua;
+    list-style: none;
+    font-family: Verdana;
+    font-size: 16px;
+    text-align: center;
+}
+#menu{
+    width: 150px;
+    height: 300px;
+    background-color: chocolate;
+}
+
+/*
+margin - permite alinhar um elemento na tela ou criar um espaçamento para empurrar o próximo elemento
+
+padding - espaçamento interno nos elementos
+*/
+.menuItem{
+    width: inherit;
+    height: 35px;
+    background-color: darkcyan;
+    color:aqua;
+    list-style: none;
+    font-family: Verdana;
+    font-size: 16px;
+    text-align: center;
+    padding-top:15px;
+    margin-bottom: 10px;
+}
+.menuItem:hover{
+    background-color: antiquewhite;
+    color: blue;
+/*    Permite trocar o tipo do cursor do mouse */
+    cursor: pointer;
+}
+.submenu{
+    width: 150px;
+/*    Altura minima de pelo menos 1 li*/
+    min-height: 50px;
+/*    Altura sera automatica, conforme a quantidade de li*/
+    height: auto;
+    background-color: darkorchid;
+    margin-left: 150px;
+    margin-top: -35px;
+/*    Permite ocultar um elemento no html*/
+    display: none;
+}
+.submenuItem{
+    width: inherit;
+    height: 35px;
+    padding-top: 15px;
+    background-color: darkslategrey;
+    list-style: none;
+}
+.submenuItem:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+    color:coral;
+}
+
+/*Ao passar o mouse na li do menu, iremos modificar o css da classe submenu*/
+.menuItem:hover > .submenu{
+/*    fez aparecer novamente a classe submenu que estava no display:none*/
+    display: block;
+}

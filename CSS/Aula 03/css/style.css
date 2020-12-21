@@ -1,0 +1,188 @@
+/* Pseudo Elementos */
+
+/* Permite formatar a primeira letra de uma frase */
+p::first-letter{
+    color: red;
+    font-size:20;
+    font-weight:bold;
+}
+
+/* Permite formatar a primeira linha de cada frase */
+p::first-line{
+    color: pink;
+    font-style: italic;
+    
+}
+/*
+Permite mudar o padrão de seleção do conteúdo
+
+Caso seja nescessário aplicar uma formatação para todas as tags em html, utiliza-se o (*)
+*/
+*::selection, -moz-selection{
+    background-color: orange;  
+}
+/*
+*::-moz-selection{
+    background-color: orange;  
+}
+*::-webkit-selection{
+    background-color: orange;  
+}
+*/
+
+/* Exemplo de Compartilhamento de CSS
+
+    !important deve ser usado em casos onde precisa dar prioridade a uma formatação
+*/
+h1, h2, h3{
+    font-family: "comic sans ms";
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    color: aqua;
+}
+
+h1 {
+    color: green;
+}
+h2 {
+    color: blue;
+}
+/*
+    border: solid
+            dotted
+            dashed
+            double
+            groove
+            ridge
+            inset
+            outset
+*/
+.texto {
+    font-family: verdana;
+    font-size: 18px;
+    color:dodgerblue;
+    text-align: center;
+    /*border: solid 2px red;*/ 
+}
+/* Podemos refenciar o elemento da li criando uma classe para ela ou através da hierarquia de elementos
+
+ex:
+
+Usando um class
+
+.itens{
+
+}
+
+OU
+
+Usando hierarquia de elementos
+.lista li {
+
+}
+*/
+.Lista{
+    width: 400px;
+    height: 200px;
+    background-color: sandybrown;
+}
+
+.itens{
+    font-family: serif;
+    color: darkslateblue;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    background-color:darkkhaki;
+    /* Permite mudar o tipo do marcador 
+        background-image: coloca imagens
+    */
+    list-style:inside url(../imagens/skate.png);
+    
+    /* Para criar uma lista horizontal, podemos utilizar:
+        display: inline
+        float: left
+    */
+    
+    /* display: inline; */
+    float:left;
+}
+/* Exemplo de Pseudo Classes*/
+
+.lista li:hover{
+    background-color: aquamarine;
+}
+
+.lista li:first-child{
+    background-color: darkgreen;
+    color: black;
+}
+
+.lista li:last-child{
+    background-color: crimson;
+    color: black;
+}
+
+#tabela{
+    width: 600px;
+    height:600px;
+    border:solid 1px red;
+}
+.Linha{
+    height:300px;
+}
+.Coluna{
+    width:300px;
+    border: solid 1px orange;
+    text-align: center;
+}
+/*Tabelas com formatos diferentes, usa-se Classes, caso seje tudo igual, usa-se a hierarquia pai e filho*/
+
+.caixa{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    float: left;
+}
+.caixa2{
+    width: 300px;
+    height: 300px;
+    background-color: darkgoldenrod;
+    float: left;
+}
+.caixa3{
+    width: 300px;
+    height: 300px;
+    background-color: fuchsia;
+    clear: both;
+    float: left; 
+}
+.caixa4{
+    width: 300px;
+    height: 300px;
+    background-color: cyan;
+    float: left;
+}
+.caixa5{
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

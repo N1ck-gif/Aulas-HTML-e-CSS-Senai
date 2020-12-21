@@ -1,0 +1,100 @@
+/* 
+
+    font - permite escolher somente um tipo de fonte
+
+    font-family - permite escolher uma galeria de fontes 
+
+    font-size - troca o tamanho da letra 
+    
+    color - troca a cor da fonte
+            hexadecimal
+            ingles
+            RGB()
+
+    text-align - alinhamento de texto
+                (left, center, right, justify)
+
+    text-decoration: underline - coloca uma linha abaixo
+                    overline - coloca uma linha acima da palavra
+                    line-through - risca a palavra 
+                    none - retira o sublinhado da palavra (Link)
+    
+    text-transform: uppercase - coloca em MAIUSCULO
+                    lowercase - coloca em MINUSCULO
+                    capitalize - coloca apenas a primeira letra de cada palavra em maiusculo 
+
+    letter-spacing - permite colocar espaço entre as letras da palavra
+    
+    word-spacing - permite colocar espaço entre palavras 
+
+    line-height - permite colocar altura nas linhas
+    (pode colocar em px ou em linhas: Ex: 10px ou 1.5) 
+
+    font-style: italic - permite colocar em italico
+                normal - permite retirar a formatação
+                oblique - permite colocar em italico
+
+    text-shadow - permite criar uma sombra na palavra
+                1 valor - distancia da esquerda para a direita
+                2 valor - distancia de cima para baixo
+                3 valor - intensidade da sombra
+                4 sombra - cor da sombra
+
+            Ex: text-shadow: 5px 5px 10px red;
+*/
+
+.titulo{
+
+    font:arial;
+    font-family:arial, verdana, cursive, "times new roman";
+    font size: 20px;
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 50px;
+}
+
+.texto{
+    line-height: 1.5;
+    font-style: normal;
+/*    font-weight: bold;*/
+
+
+
+}
+
+.strong {
+    color: red;
+    text-decoration: underline;
+}
+
+.destaque {
+    color:green;
+    font-size:20px;
+    text-decoration: line-through;
+    text-shadow: 5px 15px red;
+    
+}
+
+.destaque_ingles {
+    border:solid 1px blue;
+    width: 100px;
+    height: 25px;
+    background-color: pink;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    
+    
+    
+    
+}
+
+.destaque_ingles:hover {
+    background-color: red;
+    color: pink;
+    cursor: pointer;
+    transition: pointer;
+}
